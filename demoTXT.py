@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
 #
-import exceptions
-import urllib2
-from bs4 import BeautifulSoup
 import re
+import urllib2
+
 import xlwt
+from bs4 import BeautifulSoup
 
 findLink = re.compile(r'<a class="" href="(.*?)"')
 title = re.compile(r'<a.*title="(.*?)">')
